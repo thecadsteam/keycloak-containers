@@ -63,6 +63,7 @@ fi
 
 if [ "$KEYCLOAK_IMPORT" ]; then
     SYS_PROPS+=" -Dkeycloak.import=$KEYCLOAK_IMPORT"
+    SYS_PROPS+=" -Dkeycloak.migration.strategy=OVERWRITE_EXISTING"
 fi
 
 ########################
